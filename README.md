@@ -5,6 +5,6 @@
 
 # CPQ ORG Quick Setup
 
-1. [Install](https://help.salesforce.com/articleView?id=blng_install_billing_package.htm&type=5) CPQ and Billing Package
+1. [Install](https://install.steelbrick.com/) CPQ and Billing Package
 2. Deploy Package from GIT
 4. Add Quick Quote to Account Layout
