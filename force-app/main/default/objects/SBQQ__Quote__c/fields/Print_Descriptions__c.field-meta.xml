@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Print_Descriptions__c</fullName>
+    <externalId>false</externalId>
+    <formula>ISPICKVAL( Product_Detail__c , &quot;Descriptions&quot;) || ISPICKVAL( Product_Detail__c , &quot;Both&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Print Descriptions</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

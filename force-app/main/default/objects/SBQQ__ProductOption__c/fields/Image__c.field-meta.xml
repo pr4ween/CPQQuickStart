@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Image__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS(SBQQ__OptionalSKU__r.Product_Picture_ID_URL__c,&quot;.&quot;), 
+
+IF(ISBLANK(SBQQ__OptionalSKU__r.Product_Picture_ID_URL__c), IMAGE(&quot;https://c.na35.content.force.com/servlet/servlet.ImageServer?id=0156g0000013VA5&amp;oid=00D6g0000035O0D&quot;, &quot;&quot;, 50, 100),IMAGE((SBQQ__OptionalSKU__r.Product_Picture_ID_URL__c), &quot;&quot;, SBQQ__OptionalSKU__r.Product_Image_Height__c, SBQQ__OptionalSKU__r.Product_Image_Width__c)), 
+
+(IF(ISBLANK(SBQQ__OptionalSKU__r.Product_Picture_ID_URL__c), IMAGE(&quot;https://c.na35.content.force.com/servlet/servlet.ImageServer?id=0156g0000013VA5&amp;oid=00D6g0000035O0D&quot;, &quot;&quot;, 50, 100),IMAGE(&quot;/servlet/servlet.ImageServer?id=&quot; + SBQQ__OptionalSKU__r.Product_Picture_ID_URL__c + &quot;&amp;oid=&quot; + $Organization.Id , &quot;&quot;, SBQQ__OptionalSKU__r.Product_Image_Height__c, SBQQ__OptionalSKU__r.Product_Image_Width__c))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>-</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

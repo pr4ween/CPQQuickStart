@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quick__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mapped from the quote to automatically check Bill Now after It has been Calculated</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Mapped from the quote to automatically check Bill Now after It has been Calculated</inlineHelpText>
+    <label>Quick</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

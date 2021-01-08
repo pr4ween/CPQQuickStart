@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewal__c</fullName>
+    <externalId>false</externalId>
+    <label>Renewal</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auto Renewal, 60 Day Notice</fullName>
+                <default>true</default>
+                <label>Auto Renewal, 60 Day Notice</label>
+            </value>
+            <value>
+                <fullName>Auto Renewal, 30 Day Notice</fullName>
+                <default>false</default>
+                <label>Auto Renewal, 30 Day Notice</label>
+            </value>
+            <value>
+                <fullName>Option for Renewal, 30 Day Notice</fullName>
+                <default>false</default>
+                <label>Option for Renewal, 30 Day Notice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

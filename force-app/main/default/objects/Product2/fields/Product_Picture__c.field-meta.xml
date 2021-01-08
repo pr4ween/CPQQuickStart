@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Picture__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS(Product_Picture_ID_URL__c,&quot;.&quot;), 
+
+IF(ISBLANK(Product_Picture_ID_URL__c), IMAGE(&quot;https://i.imgur.com/dLYhAHd.jpg&quot;, &quot;&quot;, 100, 100),IMAGE((Product_Picture_ID_URL__c), &quot;&quot;, Product_Image_Height__c, Product_Image_Width__c)), 
+
+(IF(ISBLANK(Product_Picture_ID_URL__c), IMAGE(&quot;https://i.imgur.com/dLYhAHd.jpg&quot;, &quot;&quot;, 100, 100),IMAGE(&quot;/servlet/servlet.ImageServer?id=&quot; + Product_Picture_ID_URL__c + &quot;&amp;oid=&quot; + $Organization.Id , &quot;&quot;, Product_Image_Height__c, Product_Image_Width__c))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Product Picture</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
